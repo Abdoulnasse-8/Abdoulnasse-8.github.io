@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdoul Nasser — Ingénieur DevOps & Cloud</title>
+    <meta name="description" content="Portfolio d'Abdoul Nasser Hamma Tinni — Ingénieur DevOps, Cloud & Infrastructure. ENSA Khouribga, 1337 Coding School.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">AN<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Bonjour, je suis</p>
+            <h1 class="hero-name">Abdoul Nasser<span>.</span></h1>
+            <h2 class="hero-title">Ingénieur DevOps & Cloud</h2>
+            <p class="hero-desc">
+                ENSA Khouribga · 1337 Coding School<br>
+                Je construis des plateformes réelles, pas des maquettes.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+            <div class="hero-links">
+                <a href="https://github.com/Abdoulnasse-8" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:criminasser@gmail.com">Email</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Élève-ingénieur en <strong>5e année Génie Informatique</strong> (option SCIL) à l'ENSA Khouribga.
+                        Élève à l'<strong>École 1337 Coding School</strong> — Khouribga (réseau 42).
+                    </p>
+                    <p>
+                        Ce qui me drive : construire des systèmes réels, de la VM au premier user.
+                        Chaque projet que je touche est <strong>déployé, testé et documenté</strong> — pas de maquettes.
+                    </p>
+                    <p>
+                        En dehors du code, je suis passionné de <strong>football</strong> ⚽ et de <strong>culture</strong>.
+                        Le terrain m'a appris la discipline, le travail d'équipe et la persévérance —
+                        des valeurs que je retrouve dans chaque projet.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="29">0</span>
+                        <span class="stat-label">Tests unitaires</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="7">0</span>
+                        <span class="stat-label">Repositories</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">PaaS en production</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects-grid">
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <span class="project-badge">Projet Phare</span>
+                        <a href="https://github.com/Abdoulnasse-8/mini-heroku" target="_blank" class="project-link">GitHub →</a>
+                    </div>
+                    <h3>Mini-Heroku</h3>
+                    <p>Plateforme PaaS self-hosted — <code>git push → HTTPS en &lt; 2 min</code></p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>Docker</span>
+                        <span>Caddy</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature">✅ Git push deploy (SSH)</div>
+                        <div class="feature">✅ Docker build automatique</div>
+                        <div class="feature">✅ HTTPS Let's Encrypt</div>
+                        <div class="feature">✅ Variables chiffrées (Fernet AES-128)</div>
+                        <div class="feature">✅ Logs temps réel (SSE)</div>
+                        <div class="feature">✅ Métriques CPU/RAM (Chart.js)</div>
+                        <div class="feature">✅ Scaling + Rollback</div>
+                        <div class="feature">✅ Add-ons PostgreSQL / Redis</div>
+                        <div class="feature">✅ 29 tests — 0 failed</div>
+                    </div>
+                    <a href="http://68.221.16.224:8000" target="_blank" class="btn btn-primary btn-sm">Démo live →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Application</span>
+                        <a href="https://github.com/Abdoulnasse-8/CabinetMedical" target="_blank" class="project-link">GitHub →</a>
+                    </div>
+                    <h3>Cabinet Médical</h3>
+                    <p>Application 3 tiers — déployée sur Mini-Heroku</p>
+                    <div class="project-tech">
+                        <span>TypeScript</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>Next.js</span>
+                    </div>
+                    <a href="https://cabinetmedical.68.221.16.224.sslip.io" target="_blank" class="btn btn-outline btn-sm">Démo live →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">C</span>
+                        <a href="https://github.com/Abdoulnasse-8/LIBFT" target="_blank" class="project-link">GitHub →</a>
+                    </div>
+                    <h3>LIBFT</h3>
+                    <p>Bibliothèque C personnalisée — 1337 Coding School</p>
+                    <div class="project-tech">
+                        <span>C</span>
+                        <span>Makefile</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Algorithme</span>
+                        <a href="https://github.com/Abdoulnasse-8/push_swap_42" target="_blank" class="project-link">GitHub →</a>
+                    </div>
+                    <h3>push_swap</h3>
+                    <p>Algorithme de tri optimisé — 42 Network</p>
+                    <div class="project-tech">
+                        <span>C</span>
+                        <span>Algorithmes</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>☁️ Cloud & Infra</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux / Ubuntu</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure VM</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Caddy / Nginx</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">systemd</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>⚙️ Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">FastAPI</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQLAlchemy / SQLite</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST API</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎨 Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jinja2 / HTMX</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🔒 Sécurité & Outils</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Fernet / AES-128</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">pytest</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CLI / Click</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Swagger / API Docs</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">☁️</div>
+                    <h3>Oracle Cloud</h3>
+                    <p>OCI Foundations Associate</p>
+                    <span class="cert-id">1Z0-1085-26</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🎩</div>
+                    <h3>Red Hat</h3>
+                    <p>System Administration I</p>
+                    <span class="cert-id">RH124</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🐳</div>
+                    <h3>1337 Coding School</h3>
+                    <p>Missing Layer — Docker & Kubernetes</p>
+                    <span class="cert-id">1337</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Une question, un projet, une opportunité ? N'hésite pas à me contacter.</p>
+                    <div class="contact-links">
+                        <a href="mailto:criminasser@gmail.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>criminasser@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/Abdoulnasse-8" target="_blank" class="contact-link">
+                            <span class="contact-icon">💻</span>
+                            <span>github.com/Abdoulnasse-8</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="contact-link">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="http://68.221.16.224:8000" target="_blank" class="contact-link">
+                            <span class="contact-icon">🚀</span>
+                            <span>Mini-Heroku — Démo live</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Ton nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Ton email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Ton message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Abdoul Nasser Hamma Tinni — ENSA Khouribga · 1337 Coding School</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
