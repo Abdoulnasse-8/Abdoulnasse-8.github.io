@@ -39,6 +39,9 @@ a:hover{color:#d4a03a}
 @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.05)}66%{transform:translate(-30px,20px) scale(.95)}}
 .grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(30,42,58,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(30,42,58,.15) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 70%)}
 .hero-content{text-align:center;position:relative;z-index:1;padding:0 24px}
+.hero-photo{margin-bottom:24px}
+.hero-photo img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 40px var(--glow);transition:var(--t)}
+.hero-photo img:hover{transform:scale(1.05);box-shadow:0 0 60px var(--glow)}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:rgba(176,132,43,.08);border:1px solid rgba(176,132,43,.2);border-radius:50px;font-size:.8rem;font-weight:500;color:var(--accent);margin-bottom:32px}
 .badge-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
