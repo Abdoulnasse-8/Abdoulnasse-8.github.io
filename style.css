@@ -678,6 +678,14 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
 }
+.cert-card--progress{
+    opacity: 0.75;
+    border-style: dashed;
+}
+.cert-card--progress .cert-card__id{
+    background: rgba(255,165,0,0.1);
+    color: #ffa500;
+}
 
 /*
  * ==================
