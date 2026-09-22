@@ -4,24 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('nav');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+  const navItems = document.querySelectorAll('.nav-link');
 
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+  }
+
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      navToggle.classList.remove('active');
+    });
   });
 
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  // Nav background on scroll
+  window.addEventListener('scroll', () => {
+    if (nav) {
+      nav.style.background = window.scrollY > 50
+        ? 'rgba(10, 15, 26, 0.98)'
+        : 'rgba(10, 15, 26, 0.85)';
+    }
   });
 
   // Active nav link on scroll
   const sections = document.querySelectorAll('section[id]');
-  function updateNav() {
+  window.addEventListener('scroll', () => {
     const scrollY = window.scrollY + 100;
     sections.forEach(section => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
       const id = section.getAttribute('id');
-      const link = navLinks.querySelector(`a[href="#${id}"]`);
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
       if (link) {
         if (scrollY >= top && scrollY < top + height) {
           link.classList.add('active');
@@ -30,71 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
-  }
-  window.addEventListener('scroll', updateNav);
-  updateNav();
-
-  // Nav background on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      nav.style.background = 'rgba(10, 15, 26, 0.95)';
-    } else {
-      nav.style.background = 'rgba(10, 15, 26, 0.85)';
-    }
   });
 
-  // ===== TYPED TEXT =====
-  const typedEl = document.getElementById('typedText');
-  const phrases = [
-    'Full Stack Developer',
-    'Cloud & DevOps Enthusiast',
-    '1337 / 42 Student',
-    'Security First',
-    'Open Source Contributor'
-  ];
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 80;
-
-  function typeEffect() {
-    const current = phrases[phraseIndex];
-    if (isDeleting) {
-      typedEl.textContent = current.substring(0, charIndex - 1);
-      charIndex--;
-      typingSpeed = 40;
-    } else {
-      typedEl.textContent = current.substring(0, charIndex + 1);
-      charIndex++;
-      typingSpeed = 80;
-    }
-
-    if (!isDeleting && charIndex === current.length) {
-      typingSpeed = 2000;
-      isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      typingSpeed = 500;
-    }
-
-    setTimeout(typeEffect, typingSpeed);
-  }
-  typeEffect();
-
-  // ===== COUNTER ANIMATION (simple & reliable) =====
+  // ===== COUNTER ANIMATION =====
   function animateCounters() {
-    document.querySelectorAll('.stat-number').forEach(el => {
-      if (el.dataset.animated) return;
+    const counters = document.querySelectorAll('.stat-number');
+    counters.forEach(el => {
+      if (el.dataset.animated === 'true') return;
       const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
+      if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
         el.dataset.animated = 'true';
         const target = parseInt(el.dataset.target);
+        if (isNaN(target) || target <= 0) return;
         let current = 0;
-        const duration = 1500;
-        const steps = 60;
-        const increment = target / steps;
-        const intervalTime = duration / steps;
+        const increment = Math.max(1, target / 50);
         const timer = setInterval(() => {
           current += increment;
           if (current >= target) {
@@ -103,64 +68,100 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             el.textContent = Math.floor(current);
           }
-        }, intervalTime);
+        }, 30);
       }
     });
   }
 
-  window.addEventListener('scroll', animateCounters);
-  window.addEventListener('load', animateCounters);
-  // Trigger once on load in case elements are already visible
+  // Run immediately and on scroll
   animateCounters();
+  window.addEventListener('scroll', animateCounters);
+  // Also run after a short delay in case layout isn't ready
+  setTimeout(animateCounters, 500);
+  setTimeout(animateCounters, 1000);
 
   // ===== SKILL BARS =====
   function animateSkills() {
-    document.querySelectorAll('.skill-fill').forEach(el => {
-      if (el.dataset.animated) return;
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        el.dataset.animated = 'true';
-        el.style.width = el.dataset.width + '%';
+    document.querySelectorAll('.skill-fill').forEach(fill => {
+      if (fill.dataset.animated === 'true') return;
+      const rect = fill.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
+        fill.dataset.animated = 'true';
+        const width = fill.dataset.width;
+        if (width) {
+          setTimeout(() => { fill.style.width = width + '%'; }, 200);
+        }
       }
     });
   }
-  window.addEventListener('scroll', animateSkills);
-  window.addEventListener('load', animateSkills);
   animateSkills();
+  window.addEventListener('scroll', animateSkills);
+  setTimeout(animateSkills, 500);
 
-  // ===== FADE IN ANIMATION =====
-  const fadeEls = document.querySelectorAll(
-    '.stat-card, .timeline-item, .exp-card, .project-card, .skill-card, .cert-card, .contact-item'
+  // ===== SCROLL REVEAL =====
+  const revealEls = document.querySelectorAll(
+    '.stat-card, .timeline-item, .exp-card, .project-card, .skill-card, .cert-card, .contact-item, .about-text p, .section-title'
   );
-  fadeEls.forEach(el => el.classList.add('fade-in'));
 
-  function handleFadeIn() {
-    fadeEls.forEach(el => {
+  function handleReveal() {
+    revealEls.forEach(el => {
       const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 60) {
-        el.classList.add('visible');
+      if (rect.top < window.innerHeight * 0.88) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
       }
     });
   }
-  window.addEventListener('scroll', handleFadeIn);
-  window.addEventListener('load', handleFadeIn);
-  handleFadeIn();
 
-  // ===== FOOTER YEAR =====
-  document.getElementById('footerYear').textContent = new Date().getFullYear();
+  // Set initial state
+  revealEls.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(25px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  });
+
+  handleReveal();
+  window.addEventListener('scroll', handleReveal);
+  setTimeout(handleReveal, 300);
+
+  // ===== TYPED TEXT =====
+  const typedEl = document.getElementById('typedText');
+  if (typedEl) {
+    const phrases = [
+      'Ingénieur DevOps & Cloud',
+      'Python · FastAPI · Docker',
+      'ENSA Khouribga · 1337',
+      'Git push → HTTPS en < 2 min',
+      'Platform Engineer'
+    ];
+    let pi = 0, ci = 0, deleting = false;
+    function type() {
+      const current = phrases[pi];
+      typedEl.textContent = deleting
+        ? current.substring(0, ci--)
+        : current.substring(0, ci++);
+      let speed = deleting ? 25 : 50;
+      if (!deleting && ci === current.length + 1) { speed = 1500; deleting = true; }
+      else if (deleting && ci === -1) { deleting = false; pi = (pi + 1) % phrases.length; speed = 350; }
+      setTimeout(type, speed);
+    }
+    type();
+  }
 
   // ===== CONTACT FORM =====
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = form.querySelector('#name').value;
-      const email = form.querySelector('#email').value;
-      const message = form.querySelector('#message').value;
-      const mailto = `mailto:hammatinni5@gmail.com?subject=Portfolio — ${encodeURIComponent(name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
-      window.location.href = mailto;
+      const name = document.getElementById('contactName')?.value || '';
+      const msg = document.getElementById('contactMessage')?.value || '';
+      window.open(`mailto:criminasser@gmail.com?subject=Portfolio - ${name}&body=${encodeURIComponent(msg)}`);
       form.reset();
     });
   }
+
+  // ===== FOOTER YEAR =====
+  const footerYear = document.getElementById('footerYear');
+  if (footerYear) footerYear.textContent = new Date().getFullYear();
 
 });
