@@ -1012,6 +1012,17 @@ a:hover {
 }
 
 /* ===== ANIMATIONS ===== */
+/* ===== SCROLL REVEAL ===== */
+.stat-card, .timeline-item, .exp-card, .project-card, .skill-card, .cert-card, .contact-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.stat-card.visible, .timeline-item.visible, .exp-card.visible, .project-card.visible, .skill-card.visible, .cert-card.visible, .contact-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
