@@ -982,3 +982,200 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/*
+ * ==================
+ * Parcours / Timeline
+ * ==================
+ */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    padding-left: 3rem;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--accent), var(--border));
+    border-radius: 10px;
+}
+.timeline__item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+.timeline__dot {
+    position: absolute;
+    left: -3.65rem;
+    top: 0.5rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 12px var(--accent-glow);
+    z-index: 1;
+}
+.timeline__item--active .timeline__dot {
+    animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 12px var(--accent-glow); }
+    50% { box-shadow: 0 0 24px var(--accent-glow), 0 0 48px rgba(176, 132, 43, 0.2); }
+}
+.timeline__content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    transition: all 0.3s;
+}
+.timeline__content:hover {
+    border-color: var(--accent);
+    transform: translateX(8px);
+    box-shadow: 0 4px 20px var(--accent-glow);
+}
+.timeline__date {
+    display: inline-block;
+    background: rgba(176, 132, 43, 0.15);
+    color: var(--accent);
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.timeline__title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+.timeline__desc {
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+.timeline__desc strong {
+    color: var(--text-primary);
+}
+
+/*
+ * ==================
+ * Projects Categories
+ * ==================
+ */
+.projects-category {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid var(--accent);
+    padding: 0.5rem 1.5rem;
+}
+
+/*
+ * ==================
+ * Expériences
+ * ==================
+ */
+.experiences-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    width: 100%;
+}
+.experience-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+}
+.experience-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+.experience-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.experience-card__badge {
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.experience-card__date {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.experience-card__title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+.experience-card__desc {
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.experience-card__desc strong {
+    color: var(--text-primary);
+}
+.experience-card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+.experience-card__tech span {
+    background: rgba(176, 132, 43, 0.1);
+    border: 1px solid rgba(176, 132, 43, 0.2);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Responsive additions for new sections */
+@media only screen and (min-width: 36em) {
+    .experiences-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
