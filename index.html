@@ -29,710 +29,663 @@
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
 </head>
 <body>
-<main>
-    <!-- Hero Header -->
-    <header id="heroHeader" class="hero-header">
-        <nav id="navBar" class="nav">
-            <div class="container">
-                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
-                    <span class="nav__hamburger-top"></span>
-                    <span class="nav__hamburger-center"></span>
-                    <span class="nav__hamburger-bottom"></span>
-                </button>
-                <ul id="navList" class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__list-link active" href="#heroHeader">&lt;Accueil &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#about">&lt;A propos &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#parcours">&lt;Parcours &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#projects">&lt;Projets &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#experiences">&lt;Expériences &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#skills">&lt;Skills &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="header__container container">
-            <div class="header__left">
-                <span class="header__sup-text">Hello World! I am a</span>
-                <h1 class="header__title">
-                    <span class="header__title-1" data-role="DEVOPS">DevOps</span>
-                    <span class="header__title-2" data-role="ENGINEER">Engineer</span>
-                </h1>
-                <p class="header__subtitle typed-text" id="typedText"></p>
-                <p class="header__msg">Ingénieur DevOps & Cloud — ENSA Khouribga · 1337 Coding School.<br>
-                    Je construis des systèmes réels, de la VM au premier user.</p>
-                <div class="header__buttons">
-                    <a href="#projects" class="header__btn header__btn--primary">Projets</a>
-                    <a href="CV_Hamma_Tinni_Abdoul_Nasser.pdf" target="_blank" class="header__btn header__btn--outline">CV</a>
-                    <a href="#contact" class="header__btn header__btn--outline">Contact</a>
-                </div>
-                <div class="header__socials">
-                    <a href="https://github.com/Abdoulnasse-8" target="_blank" class="social-link" aria-label="GitHub">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="mailto:criminasser@gmail.com" class="social-link" aria-label="Email">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="header__right">
-                <img src="./img/photo.webp" alt="Hamma Tinni Abdoul Nasser" class="hero-photo"/>
-            </div>
-        </section>
-        <span class="header__bg"></span>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="section container">
-        <h2 class="section__title">A propos</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Élève-ingénieur en <strong>Génie Informatique</strong> (option SCIL — Sécurité, Cloud, Ingénierie Logicielle) à l'ENSA Khouribga.
-                    Élève à l'<strong>École 1337 Coding School</strong> — Khouribga (réseau 42).</p>
-                <p>Ce qui me drive : <strong>construire des systèmes réels</strong>, de la VM au premier user.
-                    Chaque projet que je touche est <strong>déployé, testé et documenté</strong> — pas de maquettes.</p>
-                <p>En dehors du code, je suis passionné de <strong>football</strong> et de <strong>culture</strong>.
-                    Le terrain m'a appris la discipline, le travail d'équipe et la persévérance.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-number" data-target="29">0</span>
-                    <span class="stat-label">Tests unitaires</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="20">0</span>
-                    <span class="stat-label">Repositories</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="6">0</span>
-                    <span class="stat-label">Certifications</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="1">0</span>
-                    <span class="stat-label">PaaS en prod</span>
-                </div>
-            </div>
+<div class="editor">
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <div class="title-bar__controls">
+            <span class="control control--close"></span>
+            <span class="control control--minimize"></span>
+            <span class="control control--maximize"></span>
         </div>
-    </section>
-
-    <!-- Parcours -->
-    <section id="parcours" class="section container">
-        <h2 class="section__title">Parcours</h2>
-        <div class="timeline">
-            <div class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <span class="timeline__date">2021 — 2024</span>
-                    <h3 class="timeline__title">DEUG Mathématiques & Informatique</h3>
-                    <p class="timeline__desc">Faculté des Sciences Dhar El Mahraz, Fès. Formation fondamentale en mathématiques et informatique.</p>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <span class="timeline__date">Sept 2024 → Juin 2027</span>
-                    <h3 class="timeline__title">Cycle Ingénieur GI — ENSA Khouribga</h3>
-                    <p class="timeline__desc">Option <strong>SCIL</strong> (Sécurité, Cloud, Ingénierie Logicielle). Formation d'ingénieur en informatique.</p>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <span class="timeline__date">Sept 2025 → Oct 2026</span>
-                    <h3 class="timeline__title">École 1337 Coding School</h3>
-                    <p class="timeline__desc">Réseau 42 — Common Core : <strong>libft</strong>, <strong>ft_printf</strong>, <strong>get_next_line</strong>, <strong>push_swap</strong>, minishell, cub3D, Philosophers...</p>
-                </div>
-            </div>
-            <div class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <span class="timeline__date">Juillet — Août 2026</span>
-                    <h3 class="timeline__title">PFA Mini-Heroku — 1337</h3>
-                    <p class="timeline__desc">Plateforme <strong>PaaS self-hosted</strong> — Git push → HTTPS en &lt; 2 min. FastAPI, Docker, Caddy, 29 tests, scaling, rollback.</p>
-                </div>
-            </div>
-            <div class="timeline__item timeline__item--active">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <span class="timeline__date">Janvier/Février 2027</span>
-                    <h3 class="timeline__title">Recherche Stage PFE — 6 mois</h3>
-                    <p class="timeline__desc"><strong>Platform Engineer / DevOps</strong> — En quête d'un stage PFE de 6 mois pour mettre en pratique mes compétences.</p>
-                </div>
-            </div>
+        <div class="title-bar__file">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            portfolio.md — ~/portfolio
         </div>
-    </section>
+    </div>
 
-    <!-- Projects -->
-    <section id="projects" class="section container">
-        <h2 class="section__title">Projets</h2>
+    <div class="editor__body">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__header">EXPLORER</div>
+            <nav class="sidebar__tree">
+                <a href="#hero" class="sidebar__link active">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    hero.md
+                </a>
+                <a href="#about" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    about.txt
+                </a>
+                <a href="#parcours" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    parcours.log
+                </a>
+                <a href="#experiences" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    experience.log
+                </a>
+                <a href="#projects" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    projects/
+                </a>
+                <a href="#skills" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    skills.yaml
+                </a>
+                <a href="#certifications" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-13h-5l2-5-9 13h5z"/></svg>
+                    certs.txt
+                </a>
+                <a href="#contact" class="sidebar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+                    contact.sh
+                </a>
+            </nav>
+        </aside>
 
-        <!-- PFA & Applications -->
-        <h3 class="projects-category">PFA & Applications</h3>
-        <div class="projects-grid">
-            <article class="project-card project-card--featured">
-                <div class="project-card__header">
-                    <span class="project-card__badge">PFA</span>
-                    <a href="https://github.com/Abdoulnasse-8/mini-heroku" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero -->
+            <section id="hero" class="section hero">
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
                 </div>
-                <h3 class="project-card__title">Mini-Heroku</h3>
-                <p class="project-card__desc">PaaS self-hosted — <code>git push → HTTPS en &lt; 2 min</code>. Architecture résiliente avec health checks, Caddy HTTPS, métriques.</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>FastAPI</span><span>Docker</span><span>Caddy</span><span>SQLite</span>
+                <div class="section__content">
+                    <p class="comment">// portfolio.md</p>
+                    <br>
+                    <p class="comment">/* Welcome to my interactive portfolio */</p>
+                    <br>
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title"><span class="keyword">class</span> <span class="function">Engineer</span> {</h1>
+                            <p class="hero__property">&nbsp;&nbsp;<span class="variable">name</span>: <span class="string">"Hamma Tinni Abdoul Nasser"</span>,</p>
+                            <p class="hero__property">&nbsp;&nbsp;<span class="variable">role</span>: <span class="string">"DevOps & Cloud Engineer"</span>,</p>
+                            <p class="hero__property">&nbsp;&nbsp;<span class="variable">location</span>: <span class="string">"ENSA Khouribga · 1337 Coding School"</span>,</p>
+                            <p class="hero__property">&nbsp;&nbsp;<span class="variable">passion</span>: <span class="string">"Building real systems, from VM to first user"</span>,</p>
+                            <h1 class="hero__title">}</h1>
+                            <br>
+                            <p class="comment">// Let's build something amazing together</p>
+                            <p><span class="prompt">$</span> <span class="command">echo</span> <span class="string">"Welcome to my terminal"</span> <span class="cursor">_</span></p>
+                        </div>
+                        <div class="hero__photo">
+                            <img src="./img/photo.webp" alt="Hamma Tinni Abdoul Nasser" class="hero__avatar"/>
+                            <div class="hero__status">
+                                <span class="status-dot"></span>
+                                <span>Available for opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary"><span class="prompt">$</span> ./explore_projects.sh</a>
+                        <a href="CV_Hamma_Tinni_Abdoul_Nasser.pdf" target="_blank" class="btn btn--outline"><span class="prompt">$</span> cat cv.pdf</a>
+                        <a href="#contact" class="btn btn--outline"><span class="prompt">$</span> vim contact.sh</a>
+                    </div>
+                    <div class="hero__socials">
+                        <a href="https://github.com/Abdoulnasse-8" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:criminasser@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card__features">
-                    <div class="feature">&#10003; Git push deploy</div>
-                    <div class="feature">&#10003; Docker build auto</div>
-                    <div class="feature">&#10003; HTTPS Let's Encrypt</div>
-                    <div class="feature">&#10003; Env vars chiffrées</div>
-                    <div class="feature">&#10003; Logs SSE + Métriques</div>
-                    <div class="feature">&#10003; Scaling + Rollback</div>
-                    <div class="feature">&#10003; Add-ons PG/Redis</div>
-                    <div class="feature">&#10003; 29 tests — 0 failed</div>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="section">
+                <div class="section__header">
+                    <span class="comment">// whoami</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">cat</span> about.txt</p>
                 </div>
-                <a href="http://68.221.16.224:8000" target="_blank" class="project-card__btn project-card__btn--primary">Démo live &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Application</span>
-                    <a href="https://github.com/Abdoulnasse-8/CabinetMedical" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
                 </div>
-                <h3 class="project-card__title">Cabinet Médical</h3>
-                <p class="project-card__desc">Backend Java — application médicale 3 tiers. Jakarta EE / JPA, MySQL.</p>
-                <div class="project-card__tech">
-                    <span>Java</span><span>Jakarta EE</span><span>JPA</span><span>MySQL</span>
+                <div class="section__content">
+                    <div class="terminal-block">
+                        <p><span class="keyword">whoami</span> <span class="comment"># about me</span></p>
+                        <br>
+                        <p><span class="variable">Élève-ingénieur</span> en <span class="function">Génie Informatique</span> (option <span class="string">SCIL</span>)</p>
+                        <p>├── <span class="string">ENSA Khouribga</span> — Cycle Ingénieur</p>
+                        <p>└── <span class="string">1337 Coding School</span> — Réseau 42</p>
+                        <br>
+                        <p><span class="keyword">what_I_do</span>() {</p>
+                        <p>&nbsp;&nbsp;<span class="comment">// Building real systems</span></p>
+                        <p>&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"de la VM au premier user"</span>;</p>
+                        <p>}</p>
+                        <br>
+                        <p><span class="comment">// Chaque projet est déployé, testé et documenté — pas de maquettes</span></p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="29">0</span>
+                            <span class="stat-label">Tests unitaires</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="20">0</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="6">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">PaaS en prod</span>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://cabinetmedical.68.221.16.224.sslip.io" target="_blank" class="project-card__btn project-card__btn--outline">Démo &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Web</span>
-                    <a href="https://github.com/Abdoulnasse-8/plateforme-seo-feedback" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
+            </section>
+
+            <!-- Parcours -->
+            <section id="parcours" class="section">
+                <div class="section__header">
+                    <span class="comment">// git log --oneline</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">git</span> log --oneline --graph</p>
                 </div>
-                <h3 class="project-card__title">Plateforme SEO & Feedback</h3>
-                <p class="project-card__desc">API REST Node.js + Dashboard React + Docker. Plateforme de gestion SEO et feedback.</p>
-                <div class="project-card__tech">
-                    <span>Node.js</span><span>React</span><span>REST API</span><span>Docker</span>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
                 </div>
-                <a href="https://github.com/Abdoulnasse-8/plateforme-seo-feedback" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
+                <div class="section__content">
+                    <div class="terminal-block">
+                        <p><span class="comment">* a1b2c3d</span> <span class="string">(HEAD -> main)</span> <span class="function">Recherche Stage PFE</span></p>
+                        <p><span class="comment">* e4f5g6h</span> <span class="string">(origin/main)</span> <span class="function">PFA Mini-Heroku — 1337</span></p>
+                        <p><span class="comment">* i7j8k9l</span> <span class="function">École 1337 Coding School</span></p>
+                        <p><span class="comment">* m0n1o2p</span> <span class="function">Cycle Ingénieur GI — ENSA Khouribga</span></p>
+                        <p><span class="comment">* q3r4s5t</span> <span class="function">DEUG Mathématiques & Informatique</span></p>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">2021 — 2024</span>
+                                <h3 class="timeline__title">DEUG Mathématiques & Informatique</h3>
+                                <p class="timeline__desc">Faculté des Sciences Dhar El Mahraz, Fès. Formation fondamentale en mathématiques et informatique.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Sept 2024 → Juin 2027</span>
+                                <h3 class="timeline__title">Cycle Ingénieur GI — ENSA Khouribga</h3>
+                                <p class="timeline__desc">Option <span class="string">SCIL</span> (Sécurité, Cloud, Ingénierie Logicielle). Formation d'ingénieur en informatique.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Sept 2025 → Oct 2026</span>
+                                <h3 class="timeline__title">École 1337 Coding School</h3>
+                                <p class="timeline__desc">Réseau 42 — Common Core : <span class="function">libft</span>, <span class="function">ft_printf</span>, <span class="function">get_next_line</span>, <span class="function">push_swap</span>, minishell, cub3D, Philosophers...</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Juillet — Août 2026</span>
+                                <h3 class="timeline__title">PFA Mini-Heroku — 1337</h3>
+                                <p class="timeline__desc">Plateforme <span class="string">PaaS self-hosted</span> — Git push → HTTPS en < 2 min. FastAPI, Docker, Caddy, 29 tests, scaling, rollback.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--active">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Janvier/Février 2027</span>
+                                <h3 class="timeline__title">Recherche Stage PFE — 6 mois</h3>
+                                <p class="timeline__desc"><span class="string">Platform Engineer / DevOps</span> — En quête d'un stage PFE de 6 mois pour mettre en pratique mes compétences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expériences -->
+            <section id="experiences" class="section">
+                <div class="section__header">
+                    <span class="comment">// experience.log</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">cat</span> experience.log</p>
+                </div>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
+                </div>
+                <div class="section__content">
+                    <div class="experiences-grid">
+                        <div class="experience-card">
+                            <div class="experience-card__header">
+                                <span class="experience-card__badge">Stage PFA</span>
+                                <span class="experience-card__date">Juillet 2026 — Août 2026</span>
+                            </div>
+                            <h3 class="experience-card__title">Stagiaire DevOps & Cloud — 1337 Coding School</h3>
+                            <p class="experience-card__desc">Conception de <span class="string">Mini-Heroku</span>, plateforme PaaS automatisant les déploiements. Développement du plan de contrôle FastAPI, orchestration Docker. Architecture résiliente : health checks, Caddy HTTPS, métriques.</p>
+                            <div class="experience-card__tech">
+                                <span>Python</span><span>FastAPI</span><span>Docker</span><span>Caddy</span><span>SQLite</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-card__header">
+                                <span class="experience-card__badge">Stage Remote</span>
+                                <span class="experience-card__date">Sept 2025 — Avr 2026</span>
+                            </div>
+                            <h3 class="experience-card__title">Stagiaire Développeur Full-Stack — Dev4Smart</h3>
+                            <p class="experience-card__desc">Plateforme centralisée pour <span class="string">9 solutions logicielles</span> (Next.js, Node.js). Environnement sandbox interactif pour tests API temps réel.</p>
+                            <div class="experience-card__tech">
+                                <span>Next.js</span><span>Node.js</span><span>React</span><span>REST API</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-card__header">
+                                <span class="experience-card__badge">Bénévolat</span>
+                                <span class="experience-card__date">Sept 2025 — Fév 2026</span>
+                            </div>
+                            <h3 class="experience-card__title">Vice-Responsable Comité Conférences & Ateliers — ENSA</h3>
+                            <p class="experience-card__desc">Co-organisation <span class="string">Open Source Days v14</span> (200+ participants). Vice-responsable du comité conférences & ateliers, Club Open Source Days.</p>
+                            <div class="experience-card__tech">
+                                <span>Organisation</span><span>Communication</span><span>Open Source</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <div class="section__header">
+                    <span class="comment">// projects/</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">ls</span> -la projects/</p>
+                </div>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
+                </div>
+                <div class="section__content">
+                    <div class="projects-grid">
+                        <!-- Mini-Heroku -->
+                        <article class="project-card project-card--featured">
+                            <div class="project-card__header">
+                                <span class="project-card__badge project-card__badge--featured">★ FEATURED</span>
+                                <a href="https://github.com/Abdoulnasse-8/mini-heroku" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">Mini-Heroku</h3>
+                            <p class="project-card__desc">PaaS self-hosted — <code class="inline-code">git push → HTTPS en < 2 min</code></p>
+                            <div class="project-card__code">
+                                <pre><code><span class="comment"># Architecture</span>
+├── <span class="string">FastAPI</span> — Control plane
+├── <span class="string">Docker</span> — Build & run
+├── <span class="string">Caddy</span> — HTTPS proxy
+└── <span class="string">SQLite</span> — Metadata
+
+<span class="comment"># Features</span>
+<span class="check">✓</span> Git push deploy
+<span class="check">✓</span> Docker build auto
+<span class="check">✓</span> HTTPS Let's Encrypt
+<span class="check">✓</span> Env vars chiffrées
+<span class="check">✓</span> Logs SSE + Métriques
+<span class="check">✓</span> Scaling + Rollback
+<span class="check">✓</span> Add-ons PG/Redis
+<span class="check">✓</span> <span class="string">29 tests — 0 failed</span></code></pre>
+                            </div>
+                            <div class="project-card__tech">
+                                <span>Python</span><span>FastAPI</span><span>Docker</span><span>Caddy</span>
+                            </div>
+                            <a href="http://68.221.16.224:8000" target="_blank" class="project-card__btn project-card__btn--primary"><span class="prompt">$</span> ./open_demo.sh</a>
+                        </article>
+
+                        <!-- Cabinet Médical -->
+                        <article class="project-card">
+                            <div class="project-card__header">
+                                <span class="project-card__badge">3-Tier</span>
+                                <a href="https://github.com/Abdoulnasse-8/CabinetMedical" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">Cabinet Médical</h3>
+                            <p class="project-card__desc">App 3 tiers — Next.js + Spring Boot + PostgreSQL. Déployé sur Mini-Heroku.</p>
+                            <div class="project-card__tech">
+                                <span>Next.js</span><span>Spring Boot</span><span>PostgreSQL</span>
+                            </div>
+                            <a href="https://cabinetmedical.68.221.16.224.sslip.io" target="_blank" class="project-card__btn project-card__btn--outline"><span class="prompt">$</span> ./open_demo.sh</a>
+                        </article>
+
+                        <!-- Born2beroot -->
+                        <article class="project-card">
+                            <div class="project-card__header">
+                                <span class="project-card__badge">Security</span>
+                                <a href="https://github.com/Abdoulnasse-8/born2beroot" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">Born2beroot</h3>
+                            <p class="project-card__desc">Linux hardening — LVM encrypted, UFW, sudo rules, partitionnement sécurisé.</p>
+                            <div class="project-card__tech">
+                                <span>Linux</span><span>LVM</span><span>UFW</span><span>Bash</span>
+                            </div>
+                            <a href="https://github.com/Abdoulnasse-8/born2beroot" target="_blank" class="project-card__btn project-card__btn--outline"><span class="prompt">$</span> git log</a>
+                        </article>
+
+                        <!-- Dev4Smart -->
+                        <article class="project-card">
+                            <div class="project-card__header">
+                                <span class="project-card__badge">Full-Stack</span>
+                                <a href="https://github.com/Abdoulnasse-8/dev4smart" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">Dev4Smart — Full-Stack</h3>
+                            <p class="project-card__desc">Plateforme centralisée pour 9 solutions logicielles. Sandbox API testing.</p>
+                            <div class="project-card__tech">
+                                <span>Next.js</span><span>Node.js</span><span>React</span>
+                            </div>
+                            <a href="https://github.com/Abdoulnasse-8/dev4smart" target="_blank" class="project-card__btn project-card__btn--outline"><span class="prompt">$</span> git log</a>
+                        </article>
+
+                        <!-- libft-42 -->
+                        <article class="project-card">
+                            <div class="project-card__header">
+                                <span class="project-card__badge">C</span>
+                                <a href="https://github.com/Abdoulnasse-8/libft-42" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">libft-42</h3>
+                            <p class="project-card__desc">C library — fonctions standard réimplémentées. Premier projet à 1337.</p>
+                            <div class="project-card__tech">
+                                <span>C</span><span>Makefile</span>
+                            </div>
+                            <a href="https://github.com/Abdoulnasse-8/libft-42" target="_blank" class="project-card__btn project-card__btn--outline"><span class="prompt">$</span> git log</a>
+                        </article>
+
+                        <!-- neetcode-submissions -->
+                        <article class="project-card">
+                            <div class="project-card__header">
+                                <span class="project-card__badge">Algorithms</span>
+                                <a href="https://github.com/Abdoulnasse-8/neetcode-submissions" target="_blank" class="project-card__link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-card__title">neetcode-submissions</h3>
+                            <p class="project-card__desc">LeetCode solutions in Python — data structures & algorithms.</p>
+                            <div class="project-card__tech">
+                                <span>Python</span><span>LeetCode</span>
+                            </div>
+                            <a href="https://github.com/Abdoulnasse-8/neetcode-submissions" target="_blank" class="project-card__btn project-card__btn--outline"><span class="prompt">$</span> git log</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <div class="section__header">
+                    <span class="comment">// tree skills/</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">tree</span> skills/</p>
+                </div>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
+                </div>
+                <div class="section__content">
+                    <div class="terminal-block">
+                        <p>skills/</p>
+                        <p>├── <span class="function">backend/</span></p>
+                        <p>│   ├── <span class="string">Python (FastAPI)</span></p>
+                        <p>│   ├── <span class="string">Java (Jakarta EE)</span></p>
+                        <p>│   ├── <span class="string">JavaScript (React, Next.js)</span></p>
+                        <p>│   ├── <span class="string">Go</span></p>
+                        <p>│   └── <span class="string">C/C++</span></p>
+                        <p>├── <span class="function">cloud/</span></p>
+                        <p>│   ├── <span class="string">Docker</span></p>
+                        <p>│   ├── <span class="string">Kubernetes</span></p>
+                        <p>│   ├── <span class="string">Caddy / Nginx</span></p>
+                        <p>│   └── <span class="string">Oracle Cloud (OCI)</span></p>
+                        <p>├── <span class="function">data/</span></p>
+                        <p>│   ├── <span class="string">Spark</span></p>
+                        <p>│   ├── <span class="string">Kafka</span></p>
+                        <p>│   └── <span class="string">NoSQL</span></p>
+                        <p>├── <span class="function">devops/</span></p>
+                        <p>│   ├── <span class="string">Git / GitHub</span></p>
+                        <p>│   ├── <span class="string">GitHub Actions</span></p>
+                        <p>│   └── <span class="string">Bash</span></p>
+                        <p>└── <span class="function">security/</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;├── <span class="string">Linux / Unix</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;└── <span class="string">LVM, UFW</span></p>
+                    </div>
+                    <div class="skills-bars">
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Python (FastAPI)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Git / GitHub</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Linux / Unix</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Bash</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Java (Jakarta EE)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Caddy / Nginx</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Kubernetes</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Go</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span class="skill-bar__name">Oracle Cloud (OCI)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certifications" class="section">
+                <div class="section__header">
+                    <span class="comment">// certs.txt</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">cat</span> certs.txt</p>
+                </div>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
+                </div>
+                <div class="section__content">
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-card__icon">☁️</div>
+                            <h3 class="cert-card__title">Oracle Cloud</h3>
+                            <p class="cert-card__desc">OCI Foundations Associate</p>
+                            <span class="cert-card__id">1Z0-1085-26 — 2026</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-card__icon">🎩</div>
+                            <h3 class="cert-card__title">Red Hat</h3>
+                            <p class="cert-card__desc">System Administration I (RH124)</p>
+                            <span class="cert-card__id">2026</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-card__icon">🐳</div>
+                            <h3 class="cert-card__title">1337 Coding School</h3>
+                            <p class="cert-card__desc">Missing Layer — Docker & Kubernetes</p>
+                            <span class="cert-card__id">1337/42 — 2026</span>
+                        </div>
+                        <div class="cert-card cert-card--progress">
+                            <div class="cert-card__icon">🏗️</div>
+                            <h3 class="cert-card__title">AWS Solutions Architect</h3>
+                            <p class="cert-card__desc">Professional — Manara Tech</p>
+                            <span class="cert-card__id">En cours</span>
+                        </div>
+                        <div class="cert-card cert-card--progress">
+                            <div class="cert-card__icon">☁️</div>
+                            <h3 class="cert-card__title">OCI Architect Associate</h3>
+                            <p class="cert-card__desc">Oracle Cloud Infrastructure</p>
+                            <span class="cert-card__id">En cours</span>
+                        </div>
+                        <div class="cert-card cert-card--progress">
+                            <div class="cert-card__icon">🌐</div>
+                            <h3 class="cert-card__title">CCNA — Cisco</h3>
+                            <p class="cert-card__desc">Introduction to Networks</p>
+                            <span class="cert-card__id">En cours</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <div class="section__header">
+                    <span class="comment">// vim contact.sh</span>
+                    <p class="code-line"><span class="prompt">$</span> <span class="command">vim</span> contact.sh</p>
+                </div>
+                <div class="section__gutter">
+                    <span class="line-number">1</span>
+                    <span class="line-number">2</span>
+                    <span class="line-number">3</span>
+                    <span class="line-number">4</span>
+                    <span class="line-number">5</span>
+                    <span class="line-number">6</span>
+                    <span class="line-number">7</span>
+                    <span class="line-number">8</span>
+                    <span class="line-number">9</span>
+                    <span class="line-number">10</span>
+                </div>
+                <div class="section__content">
+                    <div class="terminal-block">
+                        <p><span class="comment">#!/bin/bash</span></p>
+                        <p><span class="comment"># contact.sh — Send me a message</span></p>
+                    </div>
+                    <div class="contact">
+                        <form class="contact__form" id="contactForm">
+                            <div class="contact__field-wrapper">
+                                <label for="contactNameTxt"><span class="variable">NAME</span>=</label>
+                                <input id="contactNameTxt" type="text" placeholder='"Your name"' required/>
+                            </div>
+                            <div class="contact__field-wrapper">
+                                <label for="contactEmailTxt"><span class="variable">EMAIL</span>=</label>
+                                <input id="contactEmailTxt" type="email" placeholder='"your@email.com"' required/>
+                            </div>
+                            <div class="contact__field-wrapper">
+                                <label for="contactDescriptionTxt"><span class="variable">MESSAGE</span>=</label>
+                                <textarea id="contactDescriptionTxt" placeholder='"Your message..."' required></textarea>
+                            </div>
+                            <button type="submit" class="contact__submit-btn"><span class="prompt">$</span> ./send_message.sh</button>
+                        </form>
+                        <div class="contact__info">
+                            <div class="terminal-block">
+                                <p><span class="comment"># Quick links</span></p>
+                                <p><span class="command">echo</span> <span class="string">"criminasser@gmail.com"</span> | <span class="command">mail</span></p>
+                                <p><span class="command">open</span> <span class="string">"https://github.com/Abdoulnasse-8"</span></p>
+                                <p><span class="command">open</span> <span class="string">"https://linkedin.com"</span></p>
+                                <p><span class="command">open</span> <span class="string">"http://68.221.16.224:8000"</span> <span class="comment"># Mini-Heroku demo</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p class="comment">/* © 2026 Hamma Tinni Abdoul Nasser — ENSA Khouribga · 1337 Coding School */</p>
+                <p class="comment">// Built with ❤️ and a terminal</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-bar__left">
+            <span class="status-bar__branch">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M6 9v12"/></svg>
+                main
+            </span>
+            <span>0 errors</span>
+            <span>0 warnings</span>
         </div>
-
-        <!-- Systèmes & Sécurité -->
-        <h3 class="projects-category">Systèmes & Sécurité</h3>
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Linux</span>
-                    <a href="https://github.com/Abdoulnasse-8/born2beroot" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">Born2beroot</h3>
-                <p class="project-card__desc">Durcissement Linux — LVM chiffré, UFW, Sudo, partitionnement sécurisé.</p>
-                <div class="project-card__tech">
-                    <span>Linux</span><span>LVM</span><span>UFW</span><span>Bash</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/born2beroot" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Java</span>
-                    <a href="https://github.com/Abdoulnasse-8/Systeme-Intelligent-Apprentissage-Graphes" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">Système Intelligent d'Apprentissage de Graphes</h3>
-                <p class="project-card__desc">Algorithmes d'apprentissage de structures de graphes en Java.</p>
-                <div class="project-card__tech">
-                    <span>Java</span><span>Graphes</span><span>Algorithmes</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/Systeme-Intelligent-Apprentissage-Graphes" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Go</span>
-                    <a href="https://github.com/Abdoulnasse-8/chirpy" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">chirpy</h3>
-                <p class="project-card__desc">Backend Go — API REST.</p>
-                <div class="project-card__tech">
-                    <span>Go</span><span>REST API</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/chirpy" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
+        <div class="status-bar__right">
+            <span>UTF-8</span>
+            <span>Markdown</span>
+            <span>Ln 1, Col 1</span>
         </div>
-
-        <!-- 42 Common Core (C) -->
-        <h3 class="projects-category">42 Common Core (C)</h3>
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">C</span>
-                    <a href="https://github.com/Abdoulnasse-8/libft-42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">libft-42</h3>
-                <p class="project-card__desc">Bibliothèque C personnalisée — fonctions standard réimplémentées</p>
-                <div class="project-card__tech">
-                    <span>C</span><span>Makefile</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/libft-42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">C</span>
-                    <a href="https://github.com/Abdoulnasse-8/ft_printf-42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">ft_printf-42</h3>
-                <p class="project-card__desc">Réimplémentation de printf en C</p>
-                <div class="project-card__tech">
-                    <span>C</span><span>Makefile</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/ft_printf-42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">C</span>
-                    <a href="https://github.com/Abdoulnasse-8/get_next_line-42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">get_next_line-42</h3>
-                <p class="project-card__desc">Lecture ligne par ligne depuis un fd</p>
-                <div class="project-card__tech">
-                    <span>C</span><span>Makefile</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/get_next_line-42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">C</span>
-                    <a href="https://github.com/Abdoulnasse-8/push_swap-42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">push_swap-42</h3>
-                <p class="project-card__desc">Algorithme de tri optimisé avec algorithmes</p>
-                <div class="project-card__tech">
-                    <span>C</span><span>Makefile</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/push_swap-42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Python</span>
-                    <a href="https://github.com/Abdoulnasse-8/A-Maze-Ing_42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">A-Maze-Ing_42</h3>
-                <p class="project-card__desc">Génération de labyrinthe — algorithmes de parcours</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>Pygame</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/A-Maze-Ing_42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Python</span>
-                    <a href="https://github.com/Abdoulnasse-8/Python_Modules-42" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">Python_Modules-42</h3>
-                <p class="project-card__desc">Modules Python — exploration des bibliothèques</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>Jupyter</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/Python_Modules-42" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-        </div>
-
-        <!-- Python & AI -->
-        <h3 class="projects-category">Python & AI</h3>
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Python</span>
-                    <a href="https://github.com/Abdoulnasse-8/asteroid-game" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">Jeux 2D Python</h3>
-                <p class="project-card__desc">Jeux Asteroid — Python & Pygame</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>Pygame</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/asteroid-game" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">AI</span>
-                    <a href="https://github.com/Abdoulnasse-8/AI-PROJECT" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">AI-PROJECT</h3>
-                <p class="project-card__desc">Projet Intelligence Artificielle</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>ML</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/AI-PROJECT" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">AI</span>
-                    <a href="https://github.com/Abdoulnasse-8/SInteliggent" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">SInteliggent</h3>
-                <p class="project-card__desc">Système intelligent</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>AI</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/SInteliggent" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Python</span>
-                    <a href="https://github.com/Abdoulnasse-8/neetcode-submissions" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">neetcode-submissions</h3>
-                <p class="project-card__desc">Solutions LeetCode — data structures & algorithms</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>LeetCode</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/neetcode-submissions" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-        </div>
-
-        <!-- Web & Autres -->
-        <h3 class="projects-category">Web & Autres</h3>
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Web</span>
-                    <a href="https://github.com/Abdoulnasse-8/TP7_API_TEST_WITH_MONGODB" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">TP7_API_TEST_WITH_MONGODB</h3>
-                <p class="project-card__desc">API REST + MongoDB — tests unitaires</p>
-                <div class="project-card__tech">
-                    <span>Python</span><span>FastAPI</span><span>MongoDB</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/TP7_API_TEST_WITH_MONGODB" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">CSS</span>
-                    <a href="https://github.com/Abdoulnasse-8/Urban-Report" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">Urban-Report</h3>
-                <p class="project-card__desc">Reporting urbain — CSS & Design</p>
-                <div class="project-card__tech">
-                    <span>HTML</span><span>CSS</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/Urban-Report" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-            <article class="project-card">
-                <div class="project-card__header">
-                    <span class="project-card__badge">Web</span>
-                    <a href="https://github.com/Abdoulnasse-8/webflyx" target="_blank" class="project-card__link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    </a>
-                </div>
-                <h3 class="project-card__title">webflyx</h3>
-                <p class="project-card__desc">Projet web</p>
-                <div class="project-card__tech">
-                    <span>Web</span>
-                </div>
-                <a href="https://github.com/Abdoulnasse-8/webflyx" target="_blank" class="project-card__btn project-card__btn--outline">GitHub &#8594;</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Expériences -->
-    <section id="experiences" class="section container">
-        <h2 class="section__title">Expériences</h2>
-        <div class="experiences-grid">
-            <div class="experience-card">
-                <div class="experience-card__header">
-                    <span class="experience-card__badge">Stage PFA</span>
-                    <span class="experience-card__date">Juillet 2026 — Août 2026</span>
-                </div>
-                <h3 class="experience-card__title">Stagiaire DevOps & Cloud — 1337 Coding School</h3>
-                <p class="experience-card__desc">Conception de <strong>Mini-Heroku</strong>, plateforme PaaS automatisant les déploiements. Développement du plan de contrôle FastAPI, orchestration Docker. Architecture résiliente : health checks, Caddy HTTPS, métriques.</p>
-                <div class="experience-card__tech">
-                    <span>Python</span><span>FastAPI</span><span>Docker</span><span>Caddy</span><span>SQLite</span>
-                </div>
-            </div>
-            <div class="experience-card">
-                <div class="experience-card__header">
-                    <span class="experience-card__badge">Stage Remote</span>
-                    <span class="experience-card__date">Sept 2025 — Avr 2026</span>
-                </div>
-                <h3 class="experience-card__title">Stagiaire Développeur Full-Stack — Dev4Smart</h3>
-                <p class="experience-card__desc">Plateforme centralisée pour <strong>9 solutions logicielles</strong> (Next.js, Node.js). Environnement sandbox interactif pour tests API temps réel.</p>
-                <div class="experience-card__tech">
-                    <span>Next.js</span><span>Node.js</span><span>React</span><span>REST API</span>
-                </div>
-            </div>
-            <div class="experience-card">
-                <div class="experience-card__header">
-                    <span class="experience-card__badge">Bénévolat</span>
-                    <span class="experience-card__date">Sept 2025 — Fév 2026</span>
-                </div>
-                <h3 class="experience-card__title">Vice-Responsable Comité Conférences & Ateliers — ENSA</h3>
-                <p class="experience-card__desc">Co-organisation <strong>Open Source Days v14</strong> (200+ participants). Vice-responsable du comité conférences & ateliers, Club Open Source Days.</p>
-                <div class="experience-card__tech">
-                    <span>Organisation</span><span>Communication</span><span>Open Source</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section container">
-        <h2 class="section__title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3 class="skill-category__title">Backend</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span class="skill-name">Python (FastAPI)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Java (Jakarta EE)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">JavaScript (React, Next.js, Node.js)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Go</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">C/C++</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Scala</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3 class="skill-category__title">Conteneurisation & Cloud</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span class="skill-name">Docker</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Kubernetes</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Caddy / Nginx</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Oracle Cloud (OCI)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">AWS (en formation)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3 class="skill-category__title">Big Data</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span class="skill-name">Spark</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Kafka</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">NoSQL</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Scala</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3 class="skill-category__title">CI/CD & Outils</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span class="skill-name">Git / GitHub / GitLab CI</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">GitHub Actions</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Bash</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">UML / Agile / Scrum</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3 class="skill-category__title">Sécurité & Réseau</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span class="skill-name">Linux / Unix</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Durcissement (LVM, UFW)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">CCNA (en formation)</span>
-                        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section container">
-        <h2 class="section__title">Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <div class="cert-card__icon">☁️</div>
-                <h3 class="cert-card__title">Oracle Cloud</h3>
-                <p class="cert-card__desc">OCI Foundations Associate</p>
-                <span class="cert-card__id">1Z0-1085-26 — 2026</span>
-            </div>
-            <div class="cert-card">
-                <div class="cert-card__icon">🎩</div>
-                <h3 class="cert-card__title">Red Hat</h3>
-                <p class="cert-card__desc">System Administration I (RH124)</p>
-                <span class="cert-card__id">2026</span>
-            </div>
-            <div class="cert-card">
-                <div class="cert-card__icon">🐳</div>
-                <h3 class="cert-card__title">1337 Coding School</h3>
-                <p class="cert-card__desc">Missing Layer — Docker & Kubernetes</p>
-                <span class="cert-card__id">1337/42 — 2026</span>
-            </div>
-            <div class="cert-card cert-card--progress">
-                <div class="cert-card__icon">🏗️</div>
-                <h3 class="cert-card__title">AWS Solutions Architect</h3>
-                <p class="cert-card__desc">Professional — Manara Tech</p>
-                <span class="cert-card__id">En cours</span>
-            </div>
-            <div class="cert-card cert-card--progress">
-                <div class="cert-card__icon">☁️</div>
-                <h3 class="cert-card__title">OCI Architect Associate</h3>
-                <p class="cert-card__desc">Oracle Cloud Infrastructure</p>
-                <span class="cert-card__id">En cours</span>
-            </div>
-            <div class="cert-card cert-card--progress">
-                <div class="cert-card__icon">🌐</div>
-                <h3 class="cert-card__title">CCNA — Cisco</h3>
-                <p class="cert-card__desc">Introduction to Networks</p>
-                <span class="cert-card__id">En cours</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section container">
-        <h2 class="section__title">Contact</h2>
-        <div class="contact">
-            <form class="contact__form" id="contactForm">
-                <div class="contact__field-wrapper">
-                    <label for="contactNameTxt">Name:</label>
-                    <input id="contactNameTxt" type="text" placeholder="What's your name?" required/>
-                </div>
-                <div class="contact__field-wrapper">
-                    <label for="contactEmailTxt">Email:</label>
-                    <input id="contactEmailTxt" type="email" placeholder="Your email" required/>
-                </div>
-                <div class="contact__field-wrapper">
-                    <label for="contactDescriptionTxt">Message:</label>
-                    <textarea id="contactDescriptionTxt" placeholder="Lets connect!" required></textarea>
-                </div>
-                <button type="submit" class="contact__submit-btn">Send Message</button>
-            </form>
-            <div class="contact__info">
-                <div class="contact__links">
-                    <a href="mailto:criminasser@gmail.com" class="contact__link">
-                        <span class="contact__link-icon">📧</span>
-                        <span>criminasser@gmail.com</span>
-                    </a>
-                    <a href="https://github.com/Abdoulnasse-8" target="_blank" class="contact__link">
-                        <span class="contact__link-icon">💻</span>
-                        <span>github.com/Abdoulnasse-8</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact__link">
-                        <span class="contact__link-icon">💼</span>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="http://68.221.16.224:8000" target="_blank" class="contact__link">
-                        <span class="contact__link-icon">🚀</span>
-                        <span>Mini-Heroku — Démo live</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        © 2026 Hamma Tinni Abdoul Nasser — ENSA Khouribga · 1337 Coding School
-    </footer>
-</main>
+    </div>
+</div>
 </body>
 </html>
